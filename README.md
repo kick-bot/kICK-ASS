@@ -1,2 +1,1 @@
-# kick-bot10
-
+# whatsapp-kick
