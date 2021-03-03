@@ -801,7 +801,7 @@ case 'timer':
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
 					reply(anu.result)
 					break
-				case 'tagall':
+				case 'marcar':
 				client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
                                         if (!isUser) return reply(mess.only.daftarB)
@@ -813,9 +813,9 @@ case 'timer':
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 MARCANDO A MACACADA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', members_id, true)
+					mentions('╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', members_id, true)
 					break
-                case 'tagall2':
+                case 'marcar2':
 				client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -826,9 +826,9 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-                                client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {quoted: mek})
+                                client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {quoted: mek})
 					break
-                case 'tagall3':
+                case 'marcar3':
 				client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -839,9 +839,9 @@ case 'timer':
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {detectLinks: false, quoted: mek})
 					break
-                        case 'tagall4':
+                        case 'marcar4':
 				client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -852,9 +852,9 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {quoted: mek})
 					break
-                case 'tagall5':
+                case 'marcar5':
 				client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -865,7 +865,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 MARCANDO A MACACADA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙')
+					reply('╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙')
 					break
 				case 'send':
 					var pc = body.slice(6)
@@ -896,14 +896,14 @@ case 'timer':
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `*「 BROADCAST 」*\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `*「 MENSAGEM AUTOMATICA ENVIADA PELO)wa.me/556992482009 」*\n\n${body.slice(4)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BROADCAST 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 MENSAGEM AUTOMATICA ENVIADA PELO)wa.me/556992482009 」*\n\n${body.slice(4)}`)
 						}
-						reply('Transmissão de sucesso')
+						reply('Transmissão de sucesso meu dono lindo')
 					}
 					break
 					case 'bcgc':
@@ -914,14 +914,14 @@ case 'timer':
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of groupMembers) {
-							client.sendMessage(_.jid, buff, image, {caption: `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `*「 BC GROPO 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of groupMembers) {
 							sendMess(_.jid, `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`)
 						}
-						reply('Grupo de transmissão de sucesso')
+						reply('Grupo de transmissão de sucesso meu dono lindo')
 					}
 					break
 				case 'alay':
