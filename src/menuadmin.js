@@ -8,11 +8,11 @@ const menuadmin = (prefix, pushname) => {
  ├─ ❏ ${prefix}closegc
  ├─ ❏ ${prefix}promote
  ├─ ❏ ${prefix}demote
- ├─ ❏ ${prefix}tagall
- ├─ ❏ ${prefix}tagall2
- ├─ ❏ ${prefix}tagall3
- ├─ ❏ ${prefix}tagall4
- ├─ ❏ ${prefix}tagall5
+ ├─ ❏ ${prefix}marcar
+ ├─ ❏ ${prefix}marcar2
+ ├─ ❏ ${prefix}marcar3
+ ├─ ❏ ${prefix}marcar4
+ ├─ ❏ ${prefix}marcar5
  ├─ ❏ ${prefix}add
  ├─ ❏ ${prefix}remover
  ├─ ❏ ${prefix}listadmins
