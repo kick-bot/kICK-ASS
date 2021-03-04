@@ -784,6 +784,14 @@ case 'timer':
 					buffer = await getBuffer(`https://images.app.goo.gl/em68SRVMeDhR5L1x6`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*𝗡𝗢𝗠𝗘:* 𝗔𝗡𝗚𝗘𝗟𝗢 𝗞𝗜𝗖𝗞-𝗔𝗦𝗦\n*𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣:*Wa.me/+556992482009\n*𝘆𝗼𝘂𝘁𝘂𝗯𝗲:*https://youtube.com/channel/UCPtLWfe5t-46bvD0Iomr7LA'})
 					break
+				case 'gay':		
+					if (isBanned) return reply(mess.only.benned) 
+					if (args.length < 1) return reply('marque seus amigos!')
+					rate = body.slice(1)
+					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+					const kl = ti[Math.floor(Math.random() * ti.length)]
+					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
+					break				
 				case 'memeindo':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/${memein.hash}.jpg`)
