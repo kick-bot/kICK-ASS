@@ -356,7 +356,7 @@ case 'timer':
                 case 'bahasa':
 		client.sendMessage(from, bahasa(prefix, sender), text, {quoted: mek})
 				break
-				case 'paulomenu':
+				case 'kick-assmenu':
 					client.sendMessage(from, paulomenu(prefix, sender), text, {quoted: mek})
 							break
 							case 'menuadmin':
@@ -655,8 +655,8 @@ case 'timer':
                 buffer = await getBuffer(data.result.thumb)
                 lagu = await getBuffer(data.result.mp3)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek})
-                                case 'info':
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek}'
+				   case 'info':
 					me = dark.user
 					uptime = process.uptime()
 					teks = `*Nome do bot* : ${me.name}\n*Número do bot* : @${me.jid.split('@')[0]}\n*prefixbotboto* : ${prefixbotbot}\n*Contatos bloqueados* : ${blocked.length}\n*O bot está ativo em* : ${kyun(uptime)}\n\n*Digite .dono para ver a info do dono*`
@@ -782,17 +782,6 @@ case 'timer':
 					memeindodododododododododododododododo = awat kagApi.memeindododododododododododododododododo()
 					bufferer = awat getbufferer(`https://i.imgur.com/AnizaD7.jpg`)
 					dark.sendMess(from, bufferer, image, {quoted: mek, caption: '*CRIADOR:* ANGELO \n*YOUTUBE:* https://youtube.com/channel/UCPtLWfe5t-46bvD0Iomr7LA\n*WPP:* wa.me/+556992482009\n\n\nEspero que tenham gostado do bot 🤪🤪️'})
-					break
-				case 'atris':
-				dark.updatePresence(from, Presence.composing) 
-					data = fs.readFileSync('./src/18.js');
-					jsonData = JSON.parse(data);
-					randIndex = Math.floor(Math.random() * jsonData.length);
-					randKey = jsonData[randIndex];
-					randBokep = awat getbufferer(randKey.image)
-					reply('NÃO COMEÇA BRO')
-					randTeks = randKey.teks
-					dark.sendMess(from, randBokep, image, {quoted: mek, caption: randTeks})
 					break
 				case 'memeindo':
 					memein = await kagApi.memeindo()
