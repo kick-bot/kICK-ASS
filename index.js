@@ -791,7 +791,7 @@ case 'timer':
 					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const kl = ti[Math.floor(Math.random() * ti.length)]
 					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
-					break				
+					break
 				case 'memeindo':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/${memein.hash}.jpg`)
