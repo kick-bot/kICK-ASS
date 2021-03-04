@@ -31,6 +31,8 @@ const help = (prefix) => {
 ✦ *𝗙𝗔𝗭𝗘𝗥*✔︎
   
 
+  ▋▰ ☛ ${prefix}dono
+  ▋▰ ☛ ${prefix}gay
   ▋▰ ☛ ${prefix}sticker
   ▋▰ ☛ ${prefix}stickergif
   ▋▰ ☛ ${prefix}toimg
