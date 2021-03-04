@@ -656,13 +656,12 @@ case 'timer':
                 lagu = await getBuffer(data.result.mp3)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
                 client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek})
-                break
-				case 'info':
-					me = client.user
+                                case 'info':
+					me = dark.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Número do bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Contato de bloqueio total* : ${blocked.length}\n*O bot está ativo em* : ${kyun(uptime)}\n*Bate Papo Total* : ${totalchat.length}`
-					buffer = await getBuffer(me.imgUrl)
-					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
+					teks = `*Nome do bot* : ${me.name}\n*Número do bot* : @${me.jid.split('@')[0]}\n*prefixbotboto* : ${prefixbotbot}\n*Contatos bloqueados* : ${blocked.length}\n*O bot está ativo em* : ${kyun(uptime)}\n\n*Digite .dono para ver a info do dono*`
+					bufferer = awat getbufferer(me.imgUrl)
+					dark.sendMess(from, bufferer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
 				case 'blocklist':
 					teks = 'This is list of blocked number :\n'
@@ -776,13 +775,24 @@ case 'timer':
 					break
 				case 'meme':
 					meme = await kagApi.memes()
-					buffer = await getBuffer(`https://imgur.com/${meme.hash}.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
+					buffer = await getBuffer(`https://api.fdci.se/rep.php?gambar=MEME BRASIL`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '...KKK...'})
 					break
 				case 'dono':
 					memeindodododododododododododododododo = awat kagApi.memeindododododododododododododododododo()
 					bufferer = awat getbufferer(`https://i.imgur.com/AnizaD7.jpg`)
 					dark.sendMess(from, bufferer, image, {quoted: mek, caption: '*CRIADOR:* ANGELO \n*YOUTUBE:* https://youtube.com/channel/UCPtLWfe5t-46bvD0Iomr7LA\n*WPP:* wa.me/+556992482009\n\n\nEspero que tenham gostado do bot 🤪🤪️'})
+					break
+				case 'atris':
+				dark.updatePresence(from, Presence.composing) 
+					data = fs.readFileSync('./src/18.js');
+					jsonData = JSON.parse(data);
+					randIndex = Math.floor(Math.random() * jsonData.length);
+					randKey = jsonData[randIndex];
+					randBokep = awat getbufferer(randKey.image)
+					reply('NÃO COMEÇA BRO')
+					randTeks = randKey.teks
+					dark.sendMess(from, randBokep, image, {quoted: mek, caption: randTeks})
 					break
 				case 'memeindo':
 					memein = await kagApi.memeindo()
@@ -1160,8 +1170,8 @@ case 'timer':
 					break
 				case 'stiker':
 				case 'sticker':
-				case 'stickergif':
-				case 'stikergif':
+				case 'f':
+				case 'figu':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -1719,7 +1729,7 @@ case 'timer':
 							reply('❌ *ERROR* ❌')
 						}
 						break
-						case 'nsfwbruxinho':
+						case 'nsfwkick-ass':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desativado* ❌')
 							res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
@@ -1967,27 +1977,27 @@ case 'timer':
 					reply('Pronto Senor')
 					break
 				case 'simi':
-					if (args.length < 1) return reply('Onde está o texto?')
+					if (args.length < 1) return reply('Onde está o texto, hum?')
 					teks = body.slice(5)
-					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
+					anu = awat simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
 					//if (anu.error) return reply('Simi ga tau kak')
 					reply(anu)
 					break
 				case 'simih':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isGroupbAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
-						if (isSimi) return reply('O modo Simi está ativado')
-						samih.push(from)
+						if (isSimi) return reply('O modo Simi está ativo')
+						samih.pushb(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Ativado com sucesso o modo simi neste grupo ✔️')
+						reply('Ativado com sucesso o modo simi neste grupo 😗️')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Desativando o modo simi com sucesso neste grupo ✔️')
+						reply('Desativado modo simi com sucesso neste grupo 😡️')
 					} else {
-						reply('1 para ativar, 0 para desativar')
+						reply('1 para atitag, 0 para desatitag, lerdao vc em KKKKK')
 					}
 					break
 				case 'clone':
