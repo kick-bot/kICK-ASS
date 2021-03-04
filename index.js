@@ -539,7 +539,7 @@ case 'timer':
                 hasil = data.logs
                 reply(hasil)
                 break
-                   case 'mapa':
+                   case 'map':
                    data = await fetchJson(`https://mnazria.herokuapp.com/api/maps?search=${body.slice(5)}`)
                    if (!isUser) return reply(mess.only.daftarB)
                    hasil = await getBuffer(data.gambar)
@@ -1159,8 +1159,8 @@ case 'timer':
 					break
 				case 'stiker':
 				case 'sticker':
-				case 'f':
-				case 'figu':
+				case 'stikerfig':
+				case 'stickerfig':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -1972,23 +1972,6 @@ case 'timer':
 					//if (anu.error) return reply('Simi ga tau kak')
 					reply(anu)
 					break
-				case 'simih':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupbAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if (Number(args[0]) === 1) {
-						if (isSimi) return reply('O modo Simi está ativo')
-						samih.pushb(from)
-						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Ativado com sucesso o modo simi neste grupo 😗️')
-					} else if (Number(args[0]) === 0) {
-						samih.splice(from, 1)
-						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Desativado modo simi com sucesso neste grupo 😡️')
-					} else {
-						reply('1 para atitag, 0 para desatitag, lerdao vc em KKKKK')
-					}
-					break
 				case 'clone':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -2029,7 +2012,7 @@ case 'timer':
                                 case 'herrypotter':
                                 case 'harrypotter':
                                         var gh = body.slice(12)
-                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}harrypotter ARR157 BOT`)
+                                        if (args.length < 1) return reply(`onde está o texto hum\nExemplo: ${prefix}harrypotter KICK-ASS BOT`)
                                         if (!isUser) return reply(mess.only.daftarB)
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=harry_potter&text=${gh}&apikey=BotWeA`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
