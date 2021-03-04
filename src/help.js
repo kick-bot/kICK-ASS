@@ -21,7 +21,7 @@ const help = (prefix) => {
 ✦ *𝗦𝗢𝗕𝗥𝗘*✔︎
  
 
-  ▋▰ ☛ ${prefix}info (n ativo)
+  ▋▰ ☛ ${prefix}info
   ▋▰ ☛ ${prefix}blocklist
   ▋▰ ☛ ${prefix}chatlist
   ▋▰ ☛ ${prefix}ping
