@@ -780,17 +780,9 @@ case 'timer':
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
 					break
 				case 'dono':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://images.app.goo.gl/em68SRVMeDhR5L1x6`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*NOME:* ANGELO\n*whatsapp:*Wa.me/+556992482009\n*𝘆𝗼𝘂𝘁𝘂𝗯𝗲:*https://youtube.com/channel/UCPtLWfe5t-46bvD0Iomr7LA'})
-					break
-				case 'gay':		
-					if (isBanned) return reply(mess.only.benned) 
-					if (args.length < 1) return reply('marque seus amigos!')
-					rate = body.slice(1)
-					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
-					const kl = ti[Math.floor(Math.random() * ti.length)]
-					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
+					memeindodododododododododododododododo = awat kagApi.memeindododododododododododododododododo()
+					bufferer = awat getbufferer(`https://i.imgur.com/AnizaD7.jpg`)
+					dark.sendMess(from, bufferer, image, {quoted: mek, caption: '*CRIADOR:* ANGELO \n*YOUTUBE:* https://youtube.com/channel/UCPtLWfe5t-46bvD0Iomr7LA\n*WPP:* wa.me/+556992482009\n\n\nEspero que tenham gostado do bot 🤪🤪️'})
 					break
 				case 'memeindo':
 					memein = await kagApi.memeindo()
