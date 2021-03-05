@@ -656,6 +656,7 @@ case 'timer':
                 lagu = await getBuffer(data.result.mp3)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
                 client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek}'
+		break
 				case 'info':
 					me = dark.user
 					uptime = process.uptime()
