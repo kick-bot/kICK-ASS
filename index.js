@@ -656,7 +656,7 @@ case 'timer':
                 lagu = await getBuffer(data.result.mp3)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
                 client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek}'
-				   case 'info':
+				case 'info':
 					me = dark.user
 					uptime = process.uptime()
 					teks = `*Nome do bot* : ${me.name}\n*Número do bot* : @${me.jid.split('@')[0]}\n*prefixbotboto* : ${prefixbotbot}\n*Contatos bloqueados* : ${blocked.length}\n*O bot está ativo em* : ${kyun(uptime)}\n\n*Digite .dono para ver a info do dono*`
@@ -812,7 +812,7 @@ case 'timer':
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', members_id, true)
+					mentions('╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 シ︎𝓑𝓞𝓣 𝓚𝓘𝓒𝓚-𝓐𝓢𝓢シ︎ 〙', members_id, true)
 					break
                 case 'marcar2':
 				client.updatePresence(from, Presence.composing) 
@@ -825,7 +825,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-                                client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {quoted: mek})
+                                client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 シ︎𝓑𝓞𝓣 𝓚𝓘𝓒𝓚-𝓐𝓢𝓢シ︎ 〙', text, {quoted: mek})
 					break
                 case 'marcar3':
 				client.updatePresence(from, Presence.composing) 
@@ -838,7 +838,7 @@ case 'timer':
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 シ︎𝓑𝓞𝓣 𝓚𝓘𝓒𝓚-𝓐𝓢𝓢シ︎ 〙', text, {detectLinks: false, quoted: mek})
 					break
                         case 'marcar4':
 				client.updatePresence(from, Presence.composing) 
@@ -851,7 +851,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 ARR157 BOT 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 MARCANDO A MACACADA FDS SE N GOSTA🐒 〙✪══\n╠➥'+teks+'╚═〘 シ︎𝓑𝓞𝓣 𝓚𝓘𝓒𝓚-𝓐𝓢𝓢シ︎ 〙', text, {quoted: mek})
 					break
                 case 'marcar5':
 				client.updatePresence(from, Presence.composing) 
